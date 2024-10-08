@@ -1,0 +1,49 @@
+/*- Mobile: 375px
+- Desktop: 1440px */
+
+/* style.css */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.contenedor-imagen{
+    padding: 0.6rem;
+}
+.cuerpo {
+   
+    background-color: rgb(202, 228, 240); /* Color de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Opcional: establece la altura del contenedor */
+}
+
+
+article .card {
+    background-color: rgb(255, 255, 255); /* Color de fondo de la tarjeta */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    max-width: 20rem; 
+    border-radius: 4%; 
+    height: auto;
+}
+
+
+@media (max-width: 768px){
+    .cuerpo{
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    article .card {
+        width: 40%;
+        max-width: 40rem; /* Puedes mantener un ancho máximo */
+        margin: auto; /* Centra la tarjeta */
+    }
+}
