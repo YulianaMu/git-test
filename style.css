@@ -6,18 +6,34 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 .contenedor-imagen{
     padding: 0.6rem;
+    
 }
 .cuerpo {
-   
-    background-color: rgb(202, 228, 240); /* Color de fondo */
+
+
+    background-color: hsl(212, 45%, 89%);
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100vh; /* Opcional: establece la altura del contenedor */
+}
+h5 {
+    font-weight: 700; /* Negrita */
+    color: hsl(218, 44%, 22%); /* Color de texto predeterminado */
+
+}
+
+p {
+    font-weight: 400; /* Normal */
+    color: hsl(216, 15%, 48%); /* Color de texto predeterminado */
+
 }
 
 
@@ -34,13 +50,13 @@ article .card {
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 375px){
     .cuerpo{
         padding: 1rem;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 376px) {
     article .card {
         width: 40%;
         max-width: 40rem; /* Puedes mantener un ancho máximo */
